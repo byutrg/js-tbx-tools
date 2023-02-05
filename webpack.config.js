@@ -4,7 +4,7 @@ export default {
     ,
     devtool: 'inline-source-map',
     output: {
-        filename: 'bundle.js',
+        filename: 'tbx-tools.js',
         library: {
             type: "module"
         }

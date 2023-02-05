@@ -1,9 +1,12 @@
 {
   "name": "tbx-tools",
-  "version": "0.1.0-alpha",
+  "version": "0.1.3-alpha",
   "description": "A library for processing TermBase eXchange (TBX) files in various ways.",
-  "main": "tbx-tools.js",
+  "main": "dist/tbx-tools.js",
   "type": "module",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",

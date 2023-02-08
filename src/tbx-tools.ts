@@ -1,4 +1,4 @@
-import Information from './information/Information'
-import IO from './io/IO'
+import Information from './information/Information.js'
+import IO from './io/IO.js'
 
 export { Information, IO }

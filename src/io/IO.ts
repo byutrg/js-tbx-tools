@@ -1,7 +1,9 @@
 export default class IO {
-    static ReadFromInput = (tbxFile: File, callback: (result: string | ArrayBuffer | null) => any) => {
+    static readAsync = (tbxFile: File) : Promise<string> => {
         let reader = new FileReader()
-        reader.onload = () => callback(reader.result)
         reader.readAsText(tbxFile)
+        return new Promise<string>((resolve, reject) => {
+            reader.onload = () => resolve(reader.result?.toString() ?? "")
+        })
     }
 }

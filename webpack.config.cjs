@@ -1,4 +1,6 @@
-export default {
+
+
+module.exports = {
     entry: 
         './src/tbx-tools.ts'
     ,
@@ -13,11 +15,16 @@ export default {
         outputModule: true
     },
     resolve: {
-        extensions: ['.ts', '.tsx'],
+        extensions: ['.js', '.ts', '.tsx'],
         extensionAlias: {
             '.js': ['.js', '.ts'],
             '.cjs': ['.cjs', '.cts'],
             '.mjs': ['.mjs', '.mts'],
+        },
+        fallback: {
+            stream: require.resolve("stream-browserify"),
+            buffer: require.resolve("buffer/"),
+            timers: require.resolve("timers-browserify")
         }
     },
     module: {

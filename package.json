@@ -40,6 +40,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "@openxmldev/linq-to-xml": "^0.10.0",
     "buffer": "^6.0.3",
     "jsonpath": "^1.1.1",
     "stream-browserify": "^3.0.0",

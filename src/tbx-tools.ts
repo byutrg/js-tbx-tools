@@ -1,4 +1,5 @@
+import Convert from './conversion/Convert.js' 
 import Information from './information/Information.js'
 import IO from './io/IO.js'
 
-export { Information, IO }
+export { Convert, Information, IO }
